@@ -25,6 +25,11 @@ export class EnsureDrConfig {
         let config = merge(this.commonConfig, this.envConfig);
         config.vpc.cidr = config.vpc.cidr;
         config.vpc.name = config.vpc.name;
+
+        for (let waf of config.waf.items) {
+            waf.ACLName = `${waf.ACLName}`
+            waf.IpSetName = `${waf.IpSetName}`
+        }
         return config;
     }
 }
