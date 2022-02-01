@@ -1,0 +1,11 @@
+{
+    "vpc": {
+        "name": "ensureDR-vpc",
+        "cidr": "10.99.0.0/16",
+        "maxAzs": 2,
+        "ciderMask": 19,
+        "privateSubnets": 2,
+        "publicSubnets": 1,
+        "natGateways": 1
+    }    
+}
