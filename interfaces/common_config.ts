@@ -1,5 +1,8 @@
-import { VPCConfig } from "./vpc_config";
-
+import { CognitoConfig} from "./cognito_config";
+import { GlobalConfig } from "./global_config";
 export interface CommonConfig {
-    vpc: VPCConfig;
+    global:GlobalConfig,
+    cognito: CognitoConfig;
+   
+    
 }

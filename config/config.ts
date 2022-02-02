@@ -1,11 +1,9 @@
-import { VPCConfig } from '../interfaces/vpc_config';
 import { CommonConfig } from '../interfaces/common_config';
 import { readFileSync } from 'fs';
 import merge from 'ts-deepmerge';
 
 
 export class EnsureDrConfig {
-    vpc: VPCConfig;
     private commonConfig: CommonConfig;
     envConfig: CommonConfig;
     constructor() {
@@ -23,8 +21,6 @@ export class EnsureDrConfig {
 
     public getConfig(): CommonConfig {
         let config = merge(this.commonConfig, this.envConfig);
-        config.vpc.cidr = config.vpc.cidr;
-        config.vpc.name = config.vpc.name;
         return config;
     }
 }

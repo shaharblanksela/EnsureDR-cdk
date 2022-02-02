@@ -7,5 +7,5 @@
         "privateSubnets": 2,
         "publicSubnets": 1,
         "natGateways": 1
-    }    
+    }
 }

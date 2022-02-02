@@ -1,0 +1,12 @@
+{
+    "global": {
+        "envName": "gal",
+        "region": "us-east-1",
+        "account": "930549680752"
+        },
+    "cognito": {
+        "userPoolName": "User-pool",
+        "userPoolClientName": "User-pool-client"
+    }
+
+}
