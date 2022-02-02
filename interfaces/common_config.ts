@@ -1,5 +1,6 @@
-import { VPCConfig } from "./vpc_config";
-
+import { GlobalConfig } from "./global_config";
+import { LambdaConfig } from "./lambda_config";
 export interface CommonConfig {
-    vpc: VPCConfig;
+    global:GlobalConfig,
+    lambda: LambdaConfig;
 }

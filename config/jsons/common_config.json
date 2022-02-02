@@ -1,0 +1,53 @@
+{
+    "global": {
+        "envName": "gal",
+        "region": "us-east-1",
+        "account": "930549680752"
+        },
+    "vpc": {
+        "cidr": "10.99.0.0/16",
+        "maxAzs": 2,
+        "mask": 19,
+        "privateSubnets": 1,
+        "publicSubnets": 1,
+        "natGateways": 1
+    },
+    "lambda": {
+        "items": [
+            {
+            "Path": "",  
+            "File": "",
+            "Name": "",
+            "Service": "",
+            "env": [
+                {
+                "name": "",
+                "value": "",
+                "prefix": "",
+                "suffix": ""
+                }
+            ]
+            },
+            {
+            "Path": "",  
+            "File": "",
+            "Name": "",
+            "Service": "",
+            "env": [
+                {
+                "name": "ES_USER",
+                "fromEnv": true
+                },
+                {
+                "name": "ES_PASSWORD",
+                "fromEnv": true
+                },
+                {
+                "name": "ES_URL",
+                "fromEnv": true
+                }
+            ]
+            }
+        ]
+    }   
+}
